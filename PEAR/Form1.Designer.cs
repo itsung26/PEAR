@@ -33,6 +33,7 @@
             this.lagStatusIndicatorTextFront = new System.Windows.Forms.Label();
             this.offLabel = new System.Windows.Forms.Label();
             this.keybindSelector = new System.Windows.Forms.TextBox();
+            this.clearKeybindButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,12 +71,21 @@
             // keybindSelector
             // 
             this.keybindSelector.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.keybindSelector.Location = new System.Drawing.Point(86, 144);
+            this.keybindSelector.Location = new System.Drawing.Point(50, 144);
             this.keybindSelector.Name = "keybindSelector";
             this.keybindSelector.ReadOnly = true;
-            this.keybindSelector.Size = new System.Drawing.Size(133, 26);
+            this.keybindSelector.Size = new System.Drawing.Size(203, 26);
             this.keybindSelector.TabIndex = 8;
             this.keybindSelector.Text = "enter a keybind...";
+            // 
+            // clearKeybindButton
+            // 
+            this.clearKeybindButton.Location = new System.Drawing.Point(91, 176);
+            this.clearKeybindButton.Name = "clearKeybindButton";
+            this.clearKeybindButton.Size = new System.Drawing.Size(114, 35);
+            this.clearKeybindButton.TabIndex = 9;
+            this.clearKeybindButton.Text = "clear keybind";
+            this.clearKeybindButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -83,6 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(296, 373);
+            this.Controls.Add(this.clearKeybindButton);
             this.Controls.Add(this.keybindSelector);
             this.Controls.Add(this.offLabel);
             this.Controls.Add(this.lagStatusIndicatorTextFront);
@@ -93,8 +104,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PEAR lagswitch";
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -106,6 +115,7 @@
         private System.Windows.Forms.Label lagStatusIndicatorTextFront;
         private System.Windows.Forms.Label offLabel;
         private System.Windows.Forms.TextBox keybindSelector;
+        private System.Windows.Forms.Button clearKeybindButton;
     }
 }
 
