@@ -12,7 +12,9 @@ namespace PEAR
 {
     public partial class Form1 : Form
     {
+        // The string name of the keybind bound button.
         private String boundButtonName;
+        // The string code of the keybind bound button.
         private String boundButtonCode;
 
         public Form1()
